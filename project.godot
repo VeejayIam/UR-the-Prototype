@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="UR_the_Prototype"
+run/main_scene="uid://tflhfh3jpenu"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +20,11 @@ config/icon="res://icon.svg"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[layer_names]
+
+3d_physics/layer_1="player"
+3d_physics/layer_2="ground"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -26,4 +32,3 @@ window/stretch/aspect="expand"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="forward_plus"

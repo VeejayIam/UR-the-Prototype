@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://tflhfh3jpenu"]
+
+[ext_resource type="PackedScene" uid="uid://dsvmh2ulmulm2" path="res://robot.tscn" id="1_vtim3"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_3te8p"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3te8p"]
+size = Vector2(10, 10)
+
+[node name="testing wrold" type="Node3D" unique_id=519888927]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=641258687]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=514927117]
+shape = SubResource("WorldBoundaryShape3D_3te8p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=34950906]
+mesh = SubResource("PlaneMesh_3te8p")
+
+[node name="robot" parent="." unique_id=1205020019 instance=ExtResource("1_vtim3")]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1833275647]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.70710677, 0, -0.7071067, 0.7071067, 0, 2, 2)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=409975532]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, 0, 0, 0)
