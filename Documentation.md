@@ -29,7 +29,7 @@ the head and torso, since they house the main computer and power supply respecti
 And without those the robot cannot function and is essentially dead.
 
 If the robot takes damage to the legs, it will limp. And when one of the legs break, it
-will jump on the other one. When both are broken it'll have to use it's hands to move 
+will jump on the other one. When both are broken it'll have to use it's hands to move
 around and cannot use them for anything else, like shooting from a gun.
 
 When the arms/hands take damage the aim and handling will worsen. If one breaks/falls off
@@ -86,6 +86,33 @@ and take them to a upgrade/respawn station and the station will make this the ba
 body. After respawn the player will posses this new body, with the old body still
 being somewhere in the world, so that the player can retrieve it.
 ### movement
+- 2 modes
+	- precise (for shooting)
+	- parkour
+#### precise
+- rotation of head and pelvis separated
+- player controls only head rotation
+- no IK for torso
+```
+if pelvis-head Δ >= 45°
+	correct pelvis to be 45° behind head
+	after the rotation stops
+		correct pelvis to be straight with head
+	if A or D held
+		strafe perpendicular to head
+else if 15° < Δ < 30°
+	if A or D held
+		if Δ on the side of A or D, and W held
+			walk in the direction of head
+		if Δ on other side, and W held
+			walk in the mirrored direction of Δ
+else if Δ < 15°
+	if A or D held
+		strafe perpendicular to pelvis
+```
+
+#### parkour
+TBD
 ### inventory
 ### procedural generation
 ### enemy ai
