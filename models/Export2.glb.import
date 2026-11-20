@@ -1,0 +1,147 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dboy8cxdwv0oj"
+path="res://.godot/imported/Export2.glb-249bb9eca5bddb7bd0320d5b85a5aa39.scn"
+
+[deps]
+
+source_file="res://models/Export2.glb"
+dest_files=["res://.godot/imported/Export2.glb-249bb9eca5bddb7bd0320d5b85a5aa39.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=0.5
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"meshes": {
+"Export2_Cube_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_005.res",
+"save_to_file/path": "uid://2o1o202fatll"
+},
+"Export2_Cube_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_006.res",
+"save_to_file/path": "uid://dm8mkbg762rvw"
+},
+"Export2_Cube_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_007.res",
+"save_to_file/path": "uid://ce2p2batx234i"
+},
+"Export2_Cube_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_009.res",
+"save_to_file/path": "uid://ctuljye1u11v5"
+},
+"Export2_Cube_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_011.res",
+"save_to_file/path": "uid://d30l6ato8you0"
+},
+"Export2_Cube_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_012.res",
+"save_to_file/path": "uid://c6wg3mjj64olw"
+},
+"Export2_Cube_070": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_070.res",
+"save_to_file/path": "uid://c3rvuucolkwgi"
+},
+"Export2_Cube_071": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_071.res",
+"save_to_file/path": "uid://c8xkql4irngva"
+},
+"Export2_Cube_072": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cube_072.res",
+"save_to_file/path": "uid://bexgfe4ovfyxt"
+},
+"Export2_Cylinder_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cylinder_004.res",
+"save_to_file/path": "uid://cbcvsv65gy7bp"
+},
+"Export2_Cylinder_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/robot_meshes/Export2_Cylinder_005.res",
+"save_to_file/path": "uid://cpnaa152t4x0y"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1
