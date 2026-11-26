@@ -71,6 +71,11 @@ func _physics_process(delta: float) -> void:
 	else:
 		push_error("yep, it's fucked at angle %.2f" % head_target.rotation_degrees.y)
 
+	movement = movement.rotated(-rotation.y)
+	
+	$"VBoxContainer/HBoxContainer2/VBoxContainer2/direction num".text = "X: %-.2f Y: %-.2f" % [direction.x, direction.y]
+	$"VBoxContainer/HBoxContainer2/VBoxContainer2/movement num".text = "X: %-.2f Y: %.-2f" % [movement.x, movement.y]
+
 
 	velocity = vec2_to_vec3(movement * speed * delta)
 
@@ -80,14 +85,15 @@ var prev_pelvis_rotation = 0
 var prev_head_rotation = 0
 
 func _process(delta: float) -> void:
-	$"HBoxContainer/VBoxContainer2/head rotation num".text = str("%.2f" % head_target.rotation_degrees.y)
-	$"HBoxContainer/VBoxContainer2/pelvis rotation num".text = str("%.2f" % rotation_degrees.y)
+	$"VBoxContainer/HBoxContainer/VBoxContainer2/head rotation num".text = str("%.2f" % head_target.rotation_degrees.y)
+	$"VBoxContainer/HBoxContainer/VBoxContainer2/pelvis rotation num".text = str("%.2f" % rotation_degrees.y)
 
-	$"HBoxContainer/VBoxContainer3/head rotation delta".text = "%.2f" % (head_target.rotation_degrees.y - prev_head_rotation)
-	$"HBoxContainer/VBoxContainer3/pelvis rotation delta".text = "%.2f" % (rotation_degrees.y - prev_pelvis_rotation)
+	$"VBoxContainer/HBoxContainer/VBoxContainer3/head rotation delta".text = "%.2f" % (head_target.rotation_degrees.y - prev_head_rotation)
+	$"VBoxContainer/HBoxContainer/VBoxContainer3/pelvis rotation delta".text = "%.2f" % (rotation_degrees.y - prev_pelvis_rotation)
 
 	prev_pelvis_rotation = rotation_degrees.y
 	prev_head_rotation = head_target.rotation_degrees.y
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
