@@ -51,7 +51,7 @@ func _physics_process(delta: float) -> void:
 
 	if abs(head_target.rotation_degrees.y) > horizontal_soft_limit:
 		correct_pelvis = true
-		movement = direction.rotated(head_target.rotation.y)
+		movement = direction.rotated(-head_target.rotation.y)
 	elif abs(head_target.rotation_degrees.y) > side_deadzone_threshold:
 		movement = direction
 	elif abs(head_target.rotation_degrees.y) > middle_deadzone_threshold: 
@@ -60,10 +60,10 @@ func _physics_process(delta: float) -> void:
 			movement = direction
 		elif direction.x < 0:
 			movement.y = direction.y
-			movement = movement.rotated(sign(head_target.rotation.y) * head_target.rotation.y)
+			movement = movement.rotated(-sign(head_target.rotation.y) * head_target.rotation.y)
 		elif direction.x > 0:
 			movement.y = direction.y
-			movement = movement.rotated(-sign(head_target.rotation.y) * head_target.rotation.y)
+			movement = movement.rotated(sign(head_target.rotation.y) * head_target.rotation.y)
 			
 	elif abs(head_target.rotation_degrees.y) <= middle_deadzone_threshold:
 		# strafe perp to pelvis
